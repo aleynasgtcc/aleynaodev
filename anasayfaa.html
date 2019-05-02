@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+
+<link rel="stylesheet" href="css.css" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+.mySlides {display:none;}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+</style>
+
+
+
+ </head>
+
+
+<body style="background-image:url(H0ay9XxFVyoqvNkXxZglr85qoY4.png); ">
+
+<nav class="navbar navbar-inverse img-responsive" style="background-color:#FFD5BC; border-color:#FFD5BC;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle buton" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand fntyazı" href="anasayfaa.html">Aleyna Söğütcü</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul style="margin-left:30px;" class="nav navbar-nav">
+        <li class="fntyazı"><a href="anasayfaa.html">Anasayfa</a></li>
+        <li class="fntyazı"><a href="hakkımda.html">Hakkımda</a></li>
+        <li class="fntyazı"><a href="calısmalarım.html">Çalışmalarım</a></li>
+        <li class="fntyazı"><a href="Cv.html">CV</a></l i>
+        <li class="fntyazı"><a href="iletişim.html">İletişim</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<div class="w3-content w3-section" style="height:900px;">
+  <img class="mySlides" src="slider.jpg" style="width:1000px; height:500px;">
+  <img class="mySlides" src="IMG_20180522_095443.jpg" style="width:1000px;  height:500px;">
+  <img class="mySlides" src="IMG_20190319_124237.jpg" style="width:1000px;  height:500px;">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div style="margin-top:-310px;" class="jumbotron">
+
+<div class="row">
+<div class="col-lg-6">
+<button  style="background-color:#FFD5BC; font-weight:bold; margin-left:200px; font-size:26px; width:400px;"class="accordion">Aleyna Kimdir ?</button>
+<div class="panel">
+  <p>Merhaba ben Aleyna! 12.sınıf Bilişim teknolojileri / Web tasarım ve programcılığı dalı okumaktayım. <a href="hakkımda.html">Hakkımda birçok yazı için tıklayınız.</a> </p>
+</div>
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</div>
+
+<div class="col-lg-6">
+   <form action="#" method="post">
+     <table width="274" height="226" style="border-style:double; margin-left:150px;   bordercolor="#FFD5BC";" >
+       <tr>
+         <td><table width="274" height="226" style="border-style:double;  bordercolor="#ffd5bc";" >
+           <tr>
+             <th style="text-align:center;" colspan=2>Favori Programlama dilleri ?</th>
+           </tr>
+           <tr>
+             <td style="text-align:center;" width="41"><input type="radio" name="partiler" value="1" /></td>
+             <td style="text-align:center;" width="215"> Python </td>
+           </tr>
+           <tr>
+             <td style="text-align:center;"><input type="radio" name="partiler" value="2" /></td>
+             <td style="text-align:center;">C#</td>
+           </tr>
+           <tr>
+             <td style="text-align:center;"><input type="radio" name="partiler" value="3" /></td>
+             <td style="text-align:center;">PHP</td>
+           </tr>
+           <tr>
+             <td style="text-align:center;" height="42"><input type="radio" name="partiler" value="4" checked /></td>
+             <td style="text-align:center;">C</td>
+           </tr>
+           <tr>
+             <td height="74" colspan="2" align=center><input type="submit" value="Oyla" /></td>
+           </tr>
+         </table></td>
+       </tr>
+     </table>
+     </p>
+    </form>
+</div>
+</div>
+</div>
+
+
+<footer id="footer" class="page-footer font-small blue pt-4">
+
+    <div class="container-fluid text-center text-md-left">
+    
+      <div class="row">
+      
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+            <ul class="list-unstyled">
+              <li>
+                <a href="anasayfaa.html">Anasayfa</a>
+              </li>
+              <li>
+                <a href="hakkımda.html">Hakkımda</a>
+              </li>
+              <li>
+                <a href="calısmalarım.html">Çalışmalarım</a>
+              </li>
+              <li>
+                <a href="Cv.html">CV</a>
+              </li>
+               <li>
+                <a href="iletişim.html">İletişim</a>
+              </li>
+            </ul>
+
+          </div>
+         
+          <div class="col-md-3 mb-md-0 mb-3">
+   <ul class="list-unstyled">
+             <table>
+             <tr>
+                <td><h5 style="text-align:center;" class="text-uppercase">E-Bülten Kayıt</h5>
+</td>
+                <td><input style="width:200px; height:30px;" type="email" placeholder="Mail adresi giriniz." /></td>
+             </tr>         
+             </table>
+             
+            </ul>
+
+          </div>
+          <div style="margin-left:70px;" class="col-md-3 mb-md-0 mb-3">
+
+
+            <ul class="list-unstyled">
+                <a style="width:40px; height:40px; font-size:25px; padding-top:10px;" href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                <a  style="width:40px; height:40px; font-size:25px; padding-top:10px;" href="https://twitter.com/AleynaSogutcu" target="_blank" class="fa fa-twitter"></a>
+                <a   style="width:40px; height:40px; font-size:25px; padding-top:10px;"href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="fa fa-google"></a>
+                <a  style="width:40px; height:40px; font-size:25px; padding-top:10px;" href="https://www.linkedin.com/in/aleyna-s%C3%B6%C4%9F%C3%BCtc%C3%BC-83195615b/" target="_blank" class="fa fa-linkedin"></a>
+                <a  style="width:40px; height:40px; font-size:25px; padding-top:10px;" href="https://www.youtube.com/channel/UCqwcEt9GzGSDTV4Fi_g9nCA?view_as=subscriber" target="_blank" class="fa fa-youtube"></a>
+                <a style="width:40px; height:40px; font-size:25px; padding-top:10px;"  href="https://tr.pinterest.com/aleynasgtcc/" target="_blank" class="fa fa-pinterest"></a>
+            
+            </ul>
+          </div>
+      </div>
+
+    </div>
+  
+    <div class="footer-copyright text-center py-3">© 2019 Copyright: Aleyna SÖĞÜTCÜ
+      
+    </div>
+    
+
+  </footer>
+
+
+
+
+</body>
+</html>

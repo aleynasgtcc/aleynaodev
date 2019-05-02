@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+
+<link rel="stylesheet" href="css.css" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body style="background-image:url(H0ay9XxFVyoqvNkXxZglr85qoY4.png);">
+
+<nav class="navbar navbar-inverse img-responsive" style="background-color:#FFD5BC; border-color:#FFD5BC;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle buton" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand fntyazı" href="anasayfaa.html">Aleyna Söğütcü</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul style="margin-left:30px;" class="nav navbar-nav">
+        <li class="fntyazı"><a href="anasayfaa.html">Anasayfa</a></li>
+        <li class="fntyazı"><a href="hakkımda.html">Hakkımda</a></li>
+        <li class="fntyazı"><a href="calısmalarım.html">Çalışmalarım</a></li>
+        <li class="fntyazı"><a href="Cv.html">CV</a></l i>
+        <li class="fntyazı"><a href="iletişim.html">İletişim</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left:30px;" class="row">
+    <div class="col-sm-4" style="background-color:lavender;">
+      <img src="IMG_20171101_202533.jpg" width="400px;" height="400px;"  />
+    
+    
+    
+    </div>
+    <div class="col-sm-7" style="background-color:lavenderblush;">
+    <p style="font-size:25px; font-family:Arial, Helvetica, sans-serif;">Merhaba ben Aleyna! Madenler Mesleki Ve Teknik Anadolu Lisesi'nde 12.sınıf Bilişim teknolojileri / Web tasarım ve programcılığı dalı okumaktayım. 19.12.2001 tarihin de Kadıköy de doğmaktayım. Okul hayatımı İstanbul'da tamamlamaktyım. Üniversite bölümü oalrak Yazılım Mühendisliği istemekteyim. Hastahane tomografi makinalarını kodlamak istiyoum. Bilgisayar dışında futbol ve yüzme dalı ilgilenmekteyim. 11. sınıfta futbol'da Ümraniye kız futbol turnuvasında ilçe de 1. olduk. 2,5 senedir kulüp eşliğinde profosyenel yüzücüyüm, boş zamanlarım da antrenörlük ve amatör fotoğraf çekimi  yapmaktayım. </p> 
+    
+    
+    </div>
+  </div>
+</div>
+
+<div  class="w3-content" style="max-width:1200px; margin-top:90px;">
+  <img class="mySlides" src="IMG_20180522_095443.jpg" style="width:100%;display:none">
+  <img class="mySlides"  src="IMG_20180522_095443.jpg" style="width:100%">
+  <img class="mySlides"  src="IMG_20180522_095443.jpg" style="width:100%;display:none">
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="IMG_20190319_124237.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="IMG_20190428_183529.jpg" style="width:100%; height:250px;cursor:pointer" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="IMG_20171101_202533.jpg" style="width:100%; height:250px;cursor:pointer" onclick="currentDiv(3)">
+    </div>
+  </div>
+</div>
+
+<script>
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+<br />
+<br />
+<br />
+
+
+
+<footer id="footer" class="page-footer font-small blue pt-4">
+
+    <div class="container-fluid text-center text-md-left">
+    
+      <div class="row">
+      
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+            <ul class="list-unstyled">
+              <li>
+                <a href="anasayfaa.html">Anasayfa</a>
+              </li>
+              <li>
+                <a href="hakkımda.html">Hakkımda</a>
+              </li>
+              <li>
+                <a href="calısmalarım.html">Çalışmalarım</a>
+              </li>
+              <li>
+                <a href="Cv.html">CV</a>
+              </li>
+               <li>
+                <a href="iletişim.html">İletişim</a>
+              </li>
+            </ul>
+
+          </div>
+         
+          <div class="col-md-3 mb-md-0 mb-3">
+   <ul class="list-unstyled">
+             <table>
+             <tr>
+                <td><h5 style="text-align:center;" class="text-uppercase">E-Bülten Kayıt</h5>
+</td>
+                <td><input style="width:200px; height:30px;" type="email" placeholder="Mail adresi giriniz." /></td>
+             </tr>         
+             </table>
+             
+            </ul>
+
+          </div>
+          <div style="margin-left:70px;" class="col-md-3 mb-md-0 mb-3">
+
+
+            <ul class="list-unstyled">
+                <a style="width:40px; height:40px; font-size:25px; padding-top:10px;" href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                <a  style="width:40px; height:40px; font-size:25px; padding-top:10px;" href="https://twitter.com/AleynaSogutcu" target="_blank" class="fa fa-twitter"></a>
+                <a   style="width:40px; height:40px; font-size:25px; padding-top:10px;"href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="fa fa-google"></a>
+                <a  style="width:40px; height:40px; font-size:25px; padding-top:10px;" href="https://www.linkedin.com/in/aleyna-s%C3%B6%C4%9F%C3%BCtc%C3%BC-83195615b/" target="_blank" class="fa fa-linkedin"></a>
+                <a  style="width:40px; height:40px; font-size:25px; padding-top:10px;" href="https://www.youtube.com/channel/UCqwcEt9GzGSDTV4Fi_g9nCA?view_as=subscriber" target="_blank" class="fa fa-youtube"></a>
+                <a style="width:40px; height:40px; font-size:25px; padding-top:10px;"  href="https://tr.pinterest.com/aleynasgtcc/" target="_blank" class="fa fa-pinterest"></a>
+            
+            </ul>
+          </div>
+      </div>
+
+    </div>
+  
+    <div class="footer-copyright text-center py-3">© 2019 Copyright: Aleyna SÖĞÜTCÜ
+      
+    </div>
+    
+
+  </footer>
+
+</body>
+</html>
